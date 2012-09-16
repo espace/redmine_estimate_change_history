@@ -1,8 +1,8 @@
 require 'redmine'
-require 'dispatcher'
+#require 'dispatcher'
 require_dependency 'issue_view_hook'
 
-Dispatcher.to_prepare do
+Rails.configuration.to_prepare do
   require_dependency 'issue'
   require 'patch_for_issue'
   Issue.send( :include, PatchForIssue)
