@@ -1,0 +1,19 @@
+<h3 class="issue"><%= @issue.subject %></h3>
+<fieldset class="related-issues"><legend> Estimated time history</legend>
+Estimated time : <%= @issue.estimated_hours %>
+<% unless @estimates.empty? %>
+	  <% @estimates.each do |e| -%>
+      <h4><%= l(:label_updated_time, time_tag(e.updated_at)) %>.</h4>
+	    <ul>
+	      <%unless e.old_estimated_hours.blank?%>
+	        <li>Changed from <%=e.old_estimated_hours%> to <%=e.new_estimated_hours%> </li>
+	      <%else%>
+	        <li>Changed set to <%=e.new_estimated_hours%></li>
+	      <%end%>
+	    </ul>
+		<% end -%>
+  
+<%else%>
+<p>No updates were made for this estimate</p>
+<% end %>
+</fieldset>
