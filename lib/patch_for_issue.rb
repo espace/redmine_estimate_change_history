@@ -6,7 +6,7 @@ module PatchForIssue
     base.class_eval do
       unloadable
       has_many :estimate_updates
-      after_save :save_update
+      after_update :save_update
     end
   end
   

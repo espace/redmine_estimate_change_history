@@ -12,5 +12,5 @@ Redmine::Plugin.register :redmine_estimate_change_history do
   name 'Redmine Estimate Change History plugin'
   author 'Yaser'
   description 'This plugin keeps track of the changes in the estimated_hours column in the Issue model'
-  version '0.0.1'
+  version '1.0.0'
 end

@@ -1,4 +1,5 @@
 class EstimatesController < ApplicationController
+  include EstimatesHelper
   
   def index
     @issue = Issue.find(params[:issue_id])

@@ -1,11 +1,11 @@
 <script>
-    var elements = document.getElementsByClassName('estimated-hours')
+    var elements = $('td.estimated-hours');
     function replace_with_link(){
-		var old_value= elements[1].innerHTML
-        elements[1].update('<a href="<%= list_estimate_updates_url(@issue) %>">'+old_value+'</a>');
+      var old_value = elements.html();
+      elements.html('<a href="<%= list_estimate_updates_url(@issue) %>">' + old_value + '</a>');
     };
     
-    document.observe('dom:loaded', function(){
+    $(document).ready( function(){
         replace_with_link();
     });
 </script>
