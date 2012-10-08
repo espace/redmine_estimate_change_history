@@ -3,7 +3,7 @@
 Estimated time : <%= @issue.estimated_hours %>
 <% unless @estimates.empty? %>
 	  <% @estimates.each do |e| -%>
-      <h4><%= l(:label_updated_time, time_tag(e.updated_at)) %>.</h4>
+      <h4><%= l(:label_updated_time, time_tag(e.updated_at)).html_safe %>.</h4>
 	    <ul>
 	      <%unless e.old_estimated_hours.blank?%>
 	        <li>Changed from <%=e.old_estimated_hours%> to <%=e.new_estimated_hours%> </li>
