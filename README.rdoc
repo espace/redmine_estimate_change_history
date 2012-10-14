@@ -1,5 +1,0 @@
-= estimate_change_history
-
-This is a plugin to trace changes of estimated time for each issue.
-It adds a link to estimated time value that redirects to a {/<issue_id>/estimates} page.
-{/<issue_id>/estimates} page shows a list for all previous changes.
