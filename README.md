@@ -20,5 +20,7 @@ Compatible with redmine 2.1 and Rails 3.
 Redmine_estimate_change_history is provided under the MIT License.
 
 ##Credits
-Redmine_estimate_change_history is a redmine plugin developed by eSpace  http://www.espace.com.eg/.
+* [modsaid](https://github.com/modsaid)
+* [basayel](https://github.com/basayel)
+* [Yasmine-Gaber](https://github.com/Yasmine-Gaber)
 
